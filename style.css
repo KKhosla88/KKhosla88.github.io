@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    height: 12%;
+    background-color: black;
+    display: flex;
+   
+    
+}
+
+[class="navbar"]{
+    width: 100%;
+}
+
+
+
+
+.grid{
+    min-height: 88%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+}
+.filter-container,.action-container{
+    height: 75%;
+    margin-left: 5rem;
+    margin-top: 1.5vh;
+    background-color:#3a3434c4
+}
+
+.filter-container{
+    width: 15rem;
+    border-radius: 3px;
+    display: flex;
+}
+.action-container{
+    border-radius: 3px;
+    width: 7rem;
+    display: flex;
+}
+.filter{
+    /* border: 1px solid white; */
+    width: 25%;
+    height: 100%;
+}
+.filter:hover{
+    background-color: #393939;
+}
+.filter div{
+    height: 50%;
+    width: 50%;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 2.25vh;
+}
+.pink-btn,.pink{
+    background-color: #d595aa;
+}
+.blue-btn,.blue{
+    background-color: #5ecdde;
+}
+.green-btn,.green{
+    background-color: #91e6c7;
+}
+.black-btn,.black{
+    background-color: #000000;
+}
+
+
+
+
+
+.add,.remove{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: lightcyan;
+}
+
+.add:hover,.remove:hover{
+    background-color: #393939;
+}
+
+.modal-container
+{
+    /* margin-top: 5rem; */
+    box-shadow: 0px 5px 10px 0px; /*The first value is the horizontal offset and the second value is the vertical offset  3rd is blur effect  4th define spred of shadow*/ 
+    height: 15rem;                 
+    width: 30rem;
+    /* border: 1px solid; */
+    display: flex;
+    position: fixed;
+    top: 32%;
+    left: 35%;
+}
+
+.writing-area{
+    background-color: white;
+    /* border: 1px solid; */
+    height: 100%;
+    width: 70%;
+    padding: 1.5rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.filter-area{
+    background-color: #444;
+    border: 1px solid;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-filter{
+    opacity: 0.7;
+    width: 50%;
+    height: 2rem;
+    border:1px solid;
+    margin-bottom: 5px;
+}
+.modal-filter:hover{
+    opacity: 1;
+}
+.modal-filter.pink{
+    background-color: #d595aa;
+}
+.modal-filter.blue{
+     background-color: #5ecdde;
+}
+.modal-filter.green{
+    background-color: #91e6c7;
+}
+.modal-filter.black{
+    background-color: black;
+
+}
+
+.active-modal-filter{
+    border: 2px solid;
+}
+
+
+
+
+.ticket{
+    height: 10rem;
+    width: 15rem;
+    /* margin:1.5rem; */
+    background-color: white;
+}
+.ticket-color{
+    /* background-color: purple; */
+    width: 100%;
+    height: 5%;
+}
+.ticket-id{
+    padding-left: 8px;
+    padding-top: 5px;
+    font-weight: bold;
+    height: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.ticket-box{
+    height: 90%;
+    width: 100%;
+    outline: none;
+    overflow-y: auto;
+}
+
+.active-modal-filter{
+    border: 5px solid teal;
+    opacity: 1;
+}
